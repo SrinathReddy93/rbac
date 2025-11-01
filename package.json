@@ -1,0 +1,28 @@
+{
+  "name": "rbac",
+  "version": "1.0.0",
+  "description": "This single-file project layout (split into files below) implements: - Email/password registration with validation - Secure password hashing (bcrypt) - Login endpoint returning JWT access & refresh tokens - Role-based middleware (admin / user) - Token expiration and refresh mechanism (refresh-token rotation + revocation) - Unit tests (Jest) covering major flows and edge cases",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "joi": "^18.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "uuid": "^13.0.0",
+    "winston": "^3.18.3",
+    "winston-daily-rotate-file": "^5.0.0"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0",
+    "supertest": "^7.1.4"
+  }
+}
